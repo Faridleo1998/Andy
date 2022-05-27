@@ -87,14 +87,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 .nav__logo {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     font-weight: var(--fw-700);
     color: var(--white);
     letter-spacing: .2rem;
@@ -143,8 +143,8 @@ header {
 
 .nav__hamburger {
     background: var(--white);
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     border-radius: var(--border-sm);
     display: flex;
     flex-direction: column;
