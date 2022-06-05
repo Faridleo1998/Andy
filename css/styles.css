@@ -183,7 +183,7 @@ header {
 
 /* Home */
 .home {
-    height: 100vh;
+    height: 120vh;
     background: var(--gradient-3);
     padding-top: 10rem;
     border-radius: 0 0 var(--border-xl) var(--border-xl);
@@ -194,12 +194,6 @@ header {
     .home {
         height: 120vh;
         max-height: 800px;
-    }
-}
-
-@media screen and (max-height: 600px) {
-    .home {
-        min-height: 900px;
     }
 }
 
