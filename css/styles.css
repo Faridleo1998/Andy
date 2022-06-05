@@ -183,12 +183,26 @@ header {
 
 /* Home */
 .home {
-    background: var(--gradient-3);
     height: 100vh;
+    background: var(--gradient-3);
     padding-top: 10rem;
     border-radius: 0 0 var(--border-xl) var(--border-xl);
     position: relative;
 }
+
+@media screen and (min-width: 400px) {
+    .home {
+        height: 120vh;
+        max-height: 800px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .home {
+        min-height: 900px;
+    }
+}
+
 
 .home__title {
     font-size: 4rem;
@@ -218,6 +232,7 @@ header {
 .home__buttons-app,
 .home__buttons-play {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -247,7 +262,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
-    max-width: 280px;
+    max-width: 180px;
 }
 
 .home__image--left,
@@ -257,7 +272,7 @@ header {
 
 /* business */
 .business {
-    padding-top: 30rem;
+    padding-top: 25rem;
     text-align: center;
     color: var(--gray);
     font-size: 2rem;
@@ -338,6 +353,12 @@ header {
 .about__img {
     position: relative;
     padding-top: 25rem;
+}
+
+@media screen and (max-width: 320px) {
+    .about__img {
+        padding-top: 15rem;
+    }
 }
 
 .about__img img {
