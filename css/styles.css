@@ -177,7 +177,7 @@ header {
 /* Home */
 .home {
     background: var(--gradient-3);
-    height: 114vh;
+    height: 100vh;
     padding-top: 10rem;
     border-radius: 0 0 var(--border-lg) var(--border-lg);
     position: relative;
@@ -235,22 +235,21 @@ header {
     font-weight: var(--fw-500);
 }
 
+.home__images {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
 .home__image--left,
 .home__image--right {
     display: none;
 }
 
-.home__image--middle {
-    width: 50%;
-    margin: 0 auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 /* business */
 .business {
-    padding-top: 30rem;
+    padding-top: 25rem;
     text-align: center;
     color: var(--gray);
     font-size: 2rem;
