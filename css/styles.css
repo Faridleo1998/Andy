@@ -437,3 +437,59 @@ header {
 .tutorial__right img {
     border-radius: var(--border-lg);
 }
+
+/* Features */
+.features__content {
+    display: grid;
+    gap: 4rem;
+}
+
+.features__card {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--gray);
+    background: var(--white-dark);
+    border-radius: var(--border-lg);
+    overflow: hidden;
+}
+
+.features__card.card-1,
+.features__card.card-3 {
+    padding: 4rem 2rem 0 2rem;
+}
+
+.features__card.card-2 {
+    padding: 0rem 2rem 4rem 2rem;
+}
+
+.features__card.card-1 {
+    display: none;
+}
+
+.features__title {
+    font-size: 3.5rem;
+    font-weight: var(--fw-500);
+    color: var(--black);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.features__card .features__title .yellow {
+    color:var(--orange);
+}
+
+.features__card .features__title .green {
+    color: var(--green);
+}
+
+.features__card .features__title .blue {
+    color: var(--blue);
+}
+
+.features__card.card-2 .features__img {
+    transform: translateY(-20px);
+}
+
+.features__card.card-3 .features__img {
+    transform: translateY(20px);
+}
