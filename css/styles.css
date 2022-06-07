@@ -15,6 +15,7 @@
     --pink: #E77ED9;
     --green: #11AC84;
     --white: #FFFFFF;
+    --white-2: #E8E8E8;
     --white-dark: #F8F8F8;
     --black: #000000;
     --gray: #666666;
@@ -613,4 +614,128 @@ header {
     color: var(--black);
     font-size: 2rem;
     font-weight: var(--fw-500);
+}
+
+/* Pricing */
+.pricing__header {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.pricing__header h2 {
+    font-size: 3.5rem;
+    font-weight: var(--fw-700);
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+
+.pricing__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: var(--white-dark);
+    border-radius: var(--border-md);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.pricing__button {
+    border-radius: var(--border-md);
+    padding: 1rem;
+    font-weight: var(--fw-500);
+}
+
+.pricing__button span {
+    color: var(--gray-light);
+    font-size: 1.6rem;
+    margin-left: .5rem;
+    font-weight: var(--fw-400);
+}
+
+.pricing__button.active {
+    background: var(--white);
+    box-shadow: 0px 2px 10px rgba(158, 158, 158, 0.25);
+}
+
+.pricing__content {
+    display: grid;
+    gap: 4rem;
+}
+
+.pricing__card {
+    border-radius: var(--border-lg);
+    border: 1px solid var(--white-2);
+    padding: 3rem 2rem;
+    font-size: 2rem;
+    color: var(--gray);
+    text-align: center;
+}
+
+.pricing__card .blue {
+    color: var(--blue);
+}
+
+.pricing__card .orange {
+    color: var(--orange);
+}
+
+.pricing__card .pink {
+    color: var(--pink);
+}
+
+.pricing__text {
+    margin-bottom: 4rem;
+}
+
+.pricing__text h3 {
+    font-size: 3rem;
+    font-weight: var(--fw-500);
+    color: var(--black);
+}
+
+.pricing__items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 5rem;
+    margin-bottom: 4rem;
+}
+
+.pricing__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pricing__item ion-icon {
+    font-size: 2.5rem;
+}
+
+.pricing__value {
+    font-size: 6rem;
+    font-weight: var(--fw-700);
+}
+
+.pricing__desc {
+    color: var(--gray-light);
+    font-size: 1.8rem;
+}
+
+.pricing__footer .btn {
+    padding: 2rem 0;
+    margin-top: 2rem;
+    color: var(--white);
+    font-weight: var(--fw-500);
+    font-size: 2.1rem;
+}
+
+.pricing__footer .btn.blue {
+    background: var(--blue);
+}
+
+.pricing__footer .btn.orange {
+    background: var(--orange);
+}
+
+.pricing__footer .btn.pink {
+    background: var(--pink);
 }
