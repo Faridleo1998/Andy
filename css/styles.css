@@ -640,8 +640,9 @@ header {
 
 .pricing__button {
     border-radius: var(--border-md);
-    padding: 1rem;
+    padding: 1.5rem 0;
     font-weight: var(--fw-500);
+    color: var(--gray);
 }
 
 .pricing__button span {
@@ -654,6 +655,7 @@ header {
 .pricing__button.active {
     background: var(--white);
     box-shadow: 0px 2px 10px rgba(158, 158, 158, 0.25);
+    color: var(--black);
 }
 
 .pricing__content {
