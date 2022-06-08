@@ -11,7 +11,7 @@
 :root {
     /* Colors */
     --orange: #F7B731;
-    --blue: #4167F1;
+    --blue: rgb(65, 103, 241);
     --pink: #E77ED9;
     --green: #11AC84;
     --white: #FFFFFF;
@@ -92,6 +92,12 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5;
+    transition: all var(--transition-slow);
+}
+
+.scroll-header {
+    backdrop-filter: blur(15px);
+    background: rgba(33, 52, 119, 0.534);
 }
 
 .nav {
