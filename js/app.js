@@ -9,7 +9,20 @@ const swiper = new Swiper(".swiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    }
+    },
+
+    breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 5,
+          centeredSlides: true,
+        },
+        1900: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            centeredSlides: true,
+          }
+      }
 });
 
 // Change backgroud header
